@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'echo "Hello World"'
+                sh 'echo "Hello, this is a feature branch"'
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
