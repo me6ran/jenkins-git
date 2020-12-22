@@ -4,10 +4,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'echo "Hello, this is a feature branch"'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
+                script {
+                    def msg = 2 > 1 ? 'it is bigger':'it is smaller'
+                    echo msg
             }
         }
     }
