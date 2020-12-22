@@ -7,6 +7,7 @@ pipeline {
                 script {
                     def msg = 2 > 1 ? 'it is bigger':'it is smaller'
                     echo msg
+                }
             }
         }
     }
